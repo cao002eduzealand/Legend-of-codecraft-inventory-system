@@ -188,7 +188,7 @@ public class Inventory {
             System.out.println("Error: "+e.getMessage());
             return false;
         }
-
+        //User-friendly information
         System.out.println(slotsToUnlock + " slots have been unlocked, you have " + availableSlots + " slots.");
         System.out.println("New balance: " + users.getBalance());
         return true;
