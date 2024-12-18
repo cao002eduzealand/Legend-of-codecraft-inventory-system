@@ -200,7 +200,6 @@ public class Inventory {
         try {
             loadItemsFromDBInventory();
         } catch (SQLException e) {
-            throw new RuntimeException(e);
         }
         // Display inventory details
         System.out.println("----- Inventory Status -----");
