@@ -49,6 +49,7 @@ public class Main {
                         String nyPassword = input.nextLine(); // Read the password
 
                         // Create a new Users object with default values
+                        // id is auto_incremented, balance is 50 by deafult, inventory null.
                         Users users = new Users(0, nyNavn, nyPassword, 0, null);
 
                         // Call the Register method to add the new user to the database
