@@ -73,7 +73,7 @@ public class Main {
                             if (user.getId() != 0) {
                                 loggedInUser = user; // Set the logged-in user
 
-                                // Initialize the user's inventory
+                                // Initialize the user's inventory and create Inventory instance.
                                 Inventory inventory = new Inventory(user.getId());
                                 user.setInventory(inventory); // Associate inventory with user
 
