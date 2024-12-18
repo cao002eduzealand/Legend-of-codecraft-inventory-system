@@ -31,10 +31,11 @@ public class Inventory {
     private int User_id;
 
     // Constructor initializes the inventory with user ID, starting slots, and weight
-    public Inventory(int User_id) {
+    public Inventory(int User_id) throws SQLException {
         this.User_id = User_id;
         this.availableSlots = start_slots;
         this.currentWeight = 0;
+        loadItemsFromDBInventory();
     }
 
     // Loads the items from the database associated with the user
