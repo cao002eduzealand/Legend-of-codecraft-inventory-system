@@ -77,9 +77,6 @@ public class Main {
                                 Inventory inventory = new Inventory(user.getId());
                                 user.setInventory(inventory); // Associate inventory with user
 
-                                // Load the user's inventory from the database
-                                inventory.loadItemsFromDBInventory();
-
                                 // Confirmation message
                                 System.out.println("You are now logged in, " + user.getName());
 
