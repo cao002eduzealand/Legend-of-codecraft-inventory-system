@@ -34,7 +34,7 @@ public class Shop {
                 option = input.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Please enter a valid option!");  // Handle invalid input types
-                input.nextLine();
+                input.nextLine(); // Clear the buffer to avoid issues with inputs
                 continue;
             }
         
