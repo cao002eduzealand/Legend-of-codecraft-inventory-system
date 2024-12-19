@@ -80,9 +80,9 @@ public class Item {
     }
 
     /*
-     * Overrides the default toString method to provide a string representation of the Item object.
-     *
-     * @return A string containing the item's name, weight, type, and rarity.
+      Overrides the default toString method to provide a string representation of the Item object.
+     
+      @return A string containing the item's name, weight, type, and rarity.
      */
     @Override
     public String toString() {
