@@ -34,9 +34,10 @@ public class Shop {
                 option = input.nextInt();
             } catch (InputMismatchException e) {
                 System.out.println("Please enter a valid option!");  // Handle invalid input types
-                e.printStackTrace();
+                input.nextLine();
+                continue;
             }
-            input.nextLine(); // Clear the buffer to avoid issues with inputs
+        
 
             // Handle the user's choice based on the option they selected
             switch (option) {
@@ -134,9 +135,10 @@ public class Shop {
                 choice = input.nextInt();  // Get the user's choice
             } catch (InputMismatchException e) {
                 System.out.println("Invalid choice, please try again.");  // Handle invalid input
-                e.printStackTrace();
+                input.nextLine();  // Clear the input buffer for the next input
+                continue;
             }
-            input.nextLine();  // Clear the input buffer for the next input
+            
 
             // Handle each chest-buying option based on user's choice
             switch (choice) {
